@@ -13,7 +13,8 @@ RSpec.describe ChampionsController, type: :controller do
       #nowadays there are 132 registered champions
       get :index
       expect(response).to be_success
-      expect(response.body['data']).to be >= 132
+      parsed_response = JSON.parse(response.body)
+      expect(parsed_response['data'].size).to be >= 132
     end
 
   end

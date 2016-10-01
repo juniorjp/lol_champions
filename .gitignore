@@ -23,3 +23,6 @@ config/initializers/wicked_pdf.rb
 vendor/assets/components*
 public/*
 vendor/bundle/
+
+# Ignore application configuration
+/config/application.yml

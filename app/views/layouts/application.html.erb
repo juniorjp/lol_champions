@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>LolChampions</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>LOL Champions</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+  <%= stylesheet_link_tag  "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-    <%= yield %>
-  </body>
+<header class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/admin" class="navbar-brand" title="GoldGroup">LOL Champions</a>
+  </div>
+</header>
+<aside class="sidebar col-md-2">
+  <nav id="sidebar-menu" role="complementary">
+    <ul>
+      <li class="active">
+        <a href="/" title="Home"><i class="glyphicon glyphicon-home"></i><span>Listar</span></a>
+      </li>
+
+    </ul>
+  </nav>
+</aside>
+
+<div class="content col-md-10">
+  <%= yield %>
+</div>
+
+
+
+<%= javascript_include_tag "application", "data-turbolinks-eval" => false %>
+</body>
 </html>

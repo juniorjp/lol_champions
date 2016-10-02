@@ -1,0 +1,42 @@
+<div data-ng-controller="ChampionsController">
+  <div class="champion-header">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1>Champions</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="panel panel-default margin-panel">
+        <!-- Default panel contents -->
+        <div class="panel-heading">List</div>
+
+        <!-- Table -->
+        <table class="table">
+          <thead>
+          <tr>
+
+            <th>Name</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr class="news-list" data-ng-repeat="champion in champions" data-ng-cloak>
+
+            <td>{{champion.name}}</td>
+            <td></td>
+
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

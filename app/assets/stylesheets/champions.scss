@@ -1,0 +1,13 @@
+html,body{height:100%; }
+
+body{padding-top:50px;background-color:#ecf0f1;}
+
+a{color:#006ab3;}
+a:hover{color:#ffbe00;text-decoration:none;}
+
+/* Content */
+.content{padding:0 30px;min-height:100%;border-left:1px solid #dae3e9;background:#fff;}
+.content .page-header{padding:20px 0;margin:10px 0}
+.content .page-header h1{color:#006ab3;font-weight:100;line-height:0}
+.content .page-header .btn{text-transform:uppercase;}
+.content .panel-heading{text-transform:uppercase;}

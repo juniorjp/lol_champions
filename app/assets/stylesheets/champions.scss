@@ -11,3 +11,73 @@ a:hover{color:#ffbe00;text-decoration:none;}
 .content .page-header h1{color:#006ab3;font-weight:100;line-height:0}
 .content .page-header .btn{text-transform:uppercase;}
 .content .panel-heading{text-transform:uppercase;}
+
+/* Flags I18n */
+div.flags_bo {
+  width: 250px;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  a {
+    width: 25px;
+    float: left;
+    margin-right: 3px;
+    img {
+      width: 100%;
+    }
+  }
+}
+ul#language-menu {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+
+    a.google-translate {
+      width: 150px;
+    }
+
+    &.submenu:hover > ul {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      list-style: none;
+      left: 67px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 31px;
+      width: 130px;
+      z-index: 99;
+
+      li {
+        border-top: 1px solid #131f44;
+        display: block;
+        overflow: hidden;
+
+        &:last-child {
+          border-bottom: 1px solid #131f44;
+        }
+
+        a {
+          color: white;
+          background: rgba(19,31,68,0.6);
+          display: block;
+          padding: 4px;
+          text-decoration: none;
+          width: 100%;
+
+          &:hover {
+            background: rgba(227,227,227,0.8);
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

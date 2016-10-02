@@ -19,6 +19,16 @@
     </button>
     <a href="/" class="navbar-brand" title="GoldGroup">LOL Champions</a>
   </div>
+  <div class="flags_bo">
+    <ul id="language-menu">
+      <li>
+        <a href="/home/set_user_locale?locale=pt"><img src="<%= asset_path('pt.svg') %>" data-turbolinks="false" class="pt" title="Mudar idioma para português"></a>
+      </li>
+      <li>
+        <a href="/home/set_user_locale?locale=en"><img src="<%= asset_path('us.svg') %>" data-turbolinks="false" class="us" title="Change language to english"></a>
+      </li>
+    </ul>
+  </div>
 </header>
 <aside class="sidebar col-md-2">
   <nav id="sidebar-menu" role="complementary">
@@ -29,9 +39,11 @@
 
     </ul>
   </nav>
+
 </aside>
 
 <div class="content col-md-10">
+
   <%= yield %>
 </div>
 

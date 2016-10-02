@@ -35,6 +35,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl'
   gem 'factory_girl_rails'
+  gem 'jasmine-rails'
 end
 
 group :development do
@@ -52,6 +53,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery-ujs'
   gem 'rails-assets-angular'
   gem 'rails-assets-angular-resource'
+  gem 'rails-assets-angular-mocks'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

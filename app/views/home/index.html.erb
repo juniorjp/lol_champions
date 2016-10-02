@@ -2,7 +2,7 @@
   <div class="champion-header">
     <div class="row">
       <div class="col-md-6 col-sm-6">
-        <h1>Champions</h1>
+        <h1><%= I18n.t('title') %></h1>
       </div>
     </div>
   </div>
@@ -19,9 +19,9 @@
           <thead>
           <tr>
 
-            <th>Name</th>
-            <th>Title</th>
-            <th>Actions</th>
+            <th><%= I18n.t('champion_attributes.name') %></th>
+            <th><%= I18n.t('champion_attributes.title') %></th>
+            <th><%= I18n.t('champion_attributes.actions') %></th>
             <th></th>
           </tr>
           </thead>
@@ -54,11 +54,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Items Recomendados</h4>
+          <h4 class="modal-title" id="myModalLabel"><%= I18n.t('recommended_items') %></h4>
         </div>
         <div class="modal-body">
           <div>
-            <lavel>Champion</lavel>
+            <lavel><%= I18n.t('champion_attributes.entity') %></lavel>
             {{choseChampion.name}}
           </div>
           <hr>

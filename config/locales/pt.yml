@@ -19,13 +19,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en_US:
-  logo: 'LOL Champions'
-  title: 'Champions'
-  recommended_items: 'Recommended Items'
-  list: 'List'
+pt_BR:
+  logo: 'LOL Campeões'
+  title: 'Campeões'
+  recommended_items: 'Itens recomendados'
+  list: 'Listar'
   champion_attributes:
-    entity: 'Champion'
-    name: 'Name'
-    title: 'Title'
-    actions: 'Actions'
+    entity: 'Campeão'
+    name: 'Nome'
+    title: 'Título'
+    actions: 'Ações'

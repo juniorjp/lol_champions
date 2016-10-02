@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
     else
       @api_locale = extract_locale_from_accept_language_header
     end
+
+    I18n.locale = @api_locale = @api_locale.start_with?('pt') ? 'pt_BR': 'en_US'
   end
 
   private

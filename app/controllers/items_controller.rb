@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   def index
     query = {
-        locale: @api_locale.start_with?('pt') ? 'pt_BR': 'en_US',
+        locale: @api_locale,
         api_key: ENV['lol_api_key']
     }
 
